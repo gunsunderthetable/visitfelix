@@ -1,0 +1,1 @@
+SELECT `Lat`,`Long`FROM `page` where `Long` != 1.350
