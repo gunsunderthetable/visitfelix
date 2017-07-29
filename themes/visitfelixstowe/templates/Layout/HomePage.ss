@@ -3,7 +3,6 @@
     <div id="homePanel">
         <% if $Content %>
         <div id="homeIntro" class="clearFix">
-            <h1>$Title</h1>
             $Content
         </div>
         <% end_if %>

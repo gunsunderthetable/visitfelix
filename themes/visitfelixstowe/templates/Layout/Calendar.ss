@@ -20,13 +20,17 @@
                 $Form
                 $PageComments
             </div>
-            <div class="rightPanel">
+            <div class="logoSearch desktop <% if $FullWidthPage %> fullWidthLayout<% end_if %>">
+                <% include Search %>
+            </div>
+            <div class="sideBar">
                 $CalendarWidget
                 $MonthJumper
                 <h3>Go to...</h3>
-                <% include QuickNav %>                
-                $MyWidgetArea
+                <% include QuickNav %>   
                 <% include ImageLinks %>
+                $MyWidgetArea
+                <% include HasMap %>
             </div>
         </div>
             

@@ -1,8 +1,6 @@
 
 <div class="twelve columns">
-    <div class="row">
      $Breadcrumbs 
-    </div>
     <div id="standardPage">
         <div class="pageContent">
             <h1>$Title</h1>
@@ -29,9 +27,11 @@
             $Form
             $PageComments            
         </div>
-
+        <div class="logoSearch desktop">
+            <% include Search %>
+        </div>
  
-        <div class="rightPanel">
+        <div class="sideBar">
             $CalendarWidget
             $MonthJumper
             <h3>Go to...</h3>

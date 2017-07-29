@@ -18,9 +18,9 @@
                 
 		public function getCMSFields(){
 			return new FieldList(
-				new TextField('Title', 'Slide title'),
-				new TextareaField('Description', 'Slide description'),
-				new TreeDropdownField('TickerLinkID', 'Select a page to link to from the image', 'SiteTree'),
+				new TextField('Title', 'Ticker title'),
+				new TextareaField('Description', 'Description'),
+				new TreeDropdownField('TickerLinkID', 'Select a page to link to from this ticker', 'SiteTree'),
 				new UploadField('TickImage', 'Image')
 			);
 		}

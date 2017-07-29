@@ -23,7 +23,10 @@
                 $Form
                 $PageComments
             </div>
-            <div class="rightPanel">
+            <div class="logoSearch desktop">
+                <% include Search %>
+            </div>
+            <div class="sideBar">
             <% include ImageLinks %>
             $MyWidgetArea
             <% include HasMap %>

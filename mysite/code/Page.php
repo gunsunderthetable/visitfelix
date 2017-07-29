@@ -55,8 +55,7 @@ class Page extends SiteTree {
             $holder = BlogHolder::get()->First();
             return ($holder) ? BlogEntry::get()->filter('ParentID', $holder->ID)->limit($num) : false;
         }
-        
-
+    
         function getFooterLinks() {
             //return ContentController::current_site_config()->FooterLinks ? $this->parseRawLinks(ContentController::current_site_config()->FooterLinks) : '';
             $config = SiteConfig::current_site_config(); 
